@@ -110,122 +110,72 @@ class _MyWidgetState extends State<MyWidget> {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     itemList[0],
-                    SizedBox(
-                      width: 5,
-                    ),
+                    SizedBox(width: 5.0),
                     itemList[1],
-                    SizedBox(
-                      width: 5,
-                    ),
+                    SizedBox(width: 5.0),
                     
                   ],
                 ),
+                SizedBox(height: 5.0),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     itemList[2],
+                    SizedBox(width: 5.0),
                     itemList[3],
-                    SizedBox(
-                      width: 10,
-                    ),
+                    SizedBox(width: 5.0),
                     itemList[4],
-                    SizedBox(
-                      width: 10,
-                    ),
+                    SizedBox(width: 5.0),
                     itemList[5],
                   ],
                 ),
+                SizedBox(height: 5.0),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     
                     itemList[6],
-                    SizedBox(
-                      width: 10,
-                    ),
+                    SizedBox(width: 5.0),
                     itemList[7],
-                    SizedBox(
-                      width: 10,
-                    ),
+                    SizedBox(width: 5.0),
                     itemList[8],
+                    SizedBox(width: 5.0),
                     itemList[9],
                   ],
                 ),
+                SizedBox(height: 5.0),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     itemList[10],
+                    SizedBox(width: 5.0),
                     itemList[11],
-                    SizedBox(
-                      width: 10,
-                    ),
+                    SizedBox(width: 5.0),
                     itemList[12],
-                    SizedBox(
-                      width: 10,
-                    ),
+                    SizedBox(width: 5.0),
                     itemList[13],
                   ],
                 ),
+                SizedBox(height: 5.0),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     itemList[14],
+                    SizedBox(width: 5.0),
                     itemList[15],
-                    SizedBox(
-                      width: 10,
-                    ),
+                    SizedBox(width: 5.0),
                   ],
                 ),
+                SizedBox(height: 5.0),
                  Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     itemList[16],
                     
-                    SizedBox(
-                      width: 10,
-                    ),
+                    SizedBox(width: 5.0),
                   ],
                 ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    TextButton(
-                        onPressed: () {
-                          setState(() {
-                            _start = "______";
-                          });
-                        },
-                        child: Icon(
-                          Icons.close,
-                          size: 40,
-                          color: Colors.black,
-                        )),
-                    SizedBox(
-                      width: 40,
-                    ),
-                    itemList[9],
-                    SizedBox(
-                      width: 40,
-                    ),
-                    TextButton(
-                        onPressed: () {
-                          setState(() {
-                            if (_start.isNotEmpty) {
-                              int lastindex =
-                                  _start.lastIndexOf(RegExp('[^_]'));
-                              if (lastindex != -1) {
-                                _start = _start.replaceRange(
-                                    lastindex, lastindex + 1, '_');
-                              }
-                            } else {
-                              _start = "______";
-                            }
-                          });
-                        },
-                        child: Icon(Icons.backspace_outlined,
-                            size: 40, color: Colors.black)),
-                  ],
-                )
+                
               ],
             ),
           ],
