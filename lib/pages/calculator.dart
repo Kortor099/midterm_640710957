@@ -52,30 +52,38 @@ class _MyWidgetState extends State<MyWidget> {
   @override
   Widget build(BuildContext context) {
     const multiplySign = "\u00D7";
-  const divideSign = "\u00F7";
-  const subtractSign = "\u2212";
-  const equalSign = "\u003D";
+    const divideSign = "\u00F7";
+    const subtractSign = "\u2212";
+    const equalSign = "\u003D";
     var itemList = [
       Expanded(child: Background(text: "C", color: Colors.pink.shade100)),
       Expanded(
         child: Background(
-            text: "", color: Colors.blue.shade100, icon: Icons.backspace_outlined),
+            text: "",
+            color: Colors.blue.shade100,
+            icon: Icons.backspace_outlined),
       ),
       Expanded(child: Background(text: "7", color: Colors.red.shade100)),
       Expanded(child: Background(text: "8", color: Colors.red.shade100)),
       Expanded(child: Background(text: "9", color: Colors.red.shade100)),
-      Expanded(child: Background(text: divideSign, color: Colors.blue.shade100)),
+      Expanded(
+          child: Background(text: divideSign, color: Colors.blue.shade100)),
       Expanded(child: Background(text: "4", color: Colors.red.shade100)),
       Expanded(child: Background(text: "5", color: Colors.red.shade100)),
       Expanded(child: Background(text: "6", color: Colors.red.shade100)),
-      Expanded(child: Background(text: multiplySign, color: Colors.blue.shade100)),
+      Expanded(
+          child: Background(text: multiplySign, color: Colors.blue.shade100)),
       Expanded(child: Background(text: "1", color: Colors.red.shade100)),
       Expanded(child: Background(text: "2", color: Colors.red.shade100)),
       Expanded(child: Background(text: "3", color: Colors.red.shade100)),
-      Expanded(child: Background(text: subtractSign, color: Colors.blue.shade100)),
-      Expanded(flex: 3,child: Background(text: "0", color: Colors.red.shade100)),
-      Expanded(flex: 1,child: Background(text: "+", color: Colors.red.shade100)),
-      Expanded(child: Background(text: equalSign, color: Colors.purple.shade100)),
+      Expanded(
+          child: Background(text: subtractSign, color: Colors.blue.shade100)),
+      Expanded(
+          flex: 3, child: Background(text: "0", color: Colors.red.shade100)),
+      Expanded(
+          flex: 1, child: Background(text: "+", color: Colors.red.shade100)),
+      Expanded(
+          child: Background(text: equalSign, color: Colors.purple.shade100)),
     ];
 
     return Scaffold(
@@ -86,7 +94,6 @@ class _MyWidgetState extends State<MyWidget> {
           children: [
             Expanded(child: Container()),
             Column(
-             
               children: [
                 //Icon(_icon, size: 100.0),
                 Text(
@@ -111,7 +118,6 @@ class _MyWidgetState extends State<MyWidget> {
                     SizedBox(width: 5.0),
                     itemList[1],
                     SizedBox(width: 5.0),
-                    
                   ],
                 ),
                 SizedBox(height: 5.0),
@@ -131,7 +137,6 @@ class _MyWidgetState extends State<MyWidget> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    
                     itemList[6],
                     SizedBox(width: 5.0),
                     itemList[7],
@@ -165,15 +170,13 @@ class _MyWidgetState extends State<MyWidget> {
                   ],
                 ),
                 SizedBox(height: 5.0),
-                 Row(
+                Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     itemList[16],
-                    
                     SizedBox(width: 5.0),
                   ],
                 ),
-                
               ],
             ),
           ],
