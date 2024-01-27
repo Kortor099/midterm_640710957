@@ -85,21 +85,19 @@ class _MyWidgetState extends State<MyWidget> {
           //mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Expanded(child: Container()),
-            Center(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  //Icon(_icon, size: 100.0),
-                  Text(
-                    _start,
-                    style: GoogleFonts.roboto(
-                      color: Color(0xFF808080),
-                      fontSize: 30,
-                      fontWeight: FontWeight.w400,
-                    ),
-                  )
-                ],
-              ),
+            Column(
+             
+              children: [
+                //Icon(_icon, size: 100.0),
+                Text(
+                  _start,
+                  style: GoogleFonts.roboto(
+                    color: Color(0xFF808080),
+                    fontSize: 30,
+                    fontWeight: FontWeight.w400,
+                  ),
+                )
+              ],
             ),
             Expanded(child: Container()),
             Column(
